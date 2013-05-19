@@ -16,6 +16,7 @@ margin:0; padding:0;
 ul{
 margin:0; padding:0; list-style-type:none; font-size:0; line-height:0;
 }
+
 .spacer{
 	clear:both; font-size:0; line-height:0;
 } 
@@ -27,9 +28,11 @@ margin:0; padding:0; list-style-type:none; font-size:0; line-height:0;
 #leftPart{
 	width:197px; float:left;
 	}
+	
 #leftPart img.logo{
 	margin:0 0 32px 0; padding:0; font-size:0; display:block; border:none;
 	}
+	
 #leftPart p.latestWork{
 	background:url(../images/latest_work.gif) no-repeat 0 0; padding:30px 0 36px 11px; font-size:20px; line-height:24px;
 	width:159px; color:#FFFFFF; background-color:inherit; margin:0 0 11px 0;
