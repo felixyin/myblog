@@ -86,7 +86,7 @@ margin:0; padding:0; list-style-type:none; font-size:0; line-height:0;
 	width:746px; float:right;
 	}
 #rightTop{
-	width:697px; float:right; margin:0 0 40px 0 ;
+	width:697px; float:right; margin:20px 0 40px 0 ;
 	}
 #rightTop ul.navi{
 	background:url(../images/navi_bg.gif) repeat-x 0 0; height:37px; margin:0 0 0 6px;
