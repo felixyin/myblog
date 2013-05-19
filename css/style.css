@@ -138,7 +138,7 @@ margin:0; padding:0; list-style-type:none; font-size:0; line-height:0;
 	background:url(../images/book_mark_h.gif) no-repeat 0 0;
 	}
 #rightmid{
-	width:746px; float:left; margin:250px 0 0 0;
+	width:746px; float:left; margin:0 0 0 0;
 	}
 #rightmid h2.whatMore{
 	font-size:18px; line-height:20px; color:#6BB6CF; background-color:inherit; float:left; width:215px; display:block;
