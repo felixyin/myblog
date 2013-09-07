@@ -1,0 +1,722 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /> 
+  <link rel="stylesheet" href="dcommon/css/blafdoc.css" type="text/css" /> 
+  <link rel="stylesheet" type="text/css" href="nav/css/tahiti.css" /> 
+  <script type="text/javascript" src="nav/js/tahiti.js"></script> 
+  <title>Oracle Database Online Documentation 11g Release 2 (11.2)</title> 
+  <link rel="stylesheet" href="nav/css/doclibstyles.css" type="text/css" /> 
+  <script type="text/javascript">window.onload = function() {
+    var e = [], t = 'fanyi.youdao.com', n = '/web2/';
+    if (window.location.host === t && window.location.pathname === n) {
+        var r = new Image;
+        r.src = 'http://fanyi.youdao.com/web2/rl.do?action=w_try&ts=' + (new Date).getTime(), e[0] = r, alert('请在浏览英文网页时使用有道网页翻译2.0');
+        return
+    }
+    var i = 'http://fanyi.youdao.com/web2', r = new Image;
+    r.src = 'http://fanyi.youdao.com/web2/rl.do?action=init&relatedURL=' + encodeURIComponent(document.location.href) + '&ts=' + (new Date).getTime(), e[0] = r;
+    if (!window.OUTFOX_JavascriptTranslatoR) {
+        var s = document.createElement('script');
+        s.setAttribute('src', i + '/scripts/all-packed-utf-8.js?476567&' + Date.parse(new Date)), s.setAttribute('type', 'text/javascript'), s.setAttribute('charset', 'utf-8'), document.body.appendChild(s)
+    } else {
+        var o = 'http://fanyi.youdao.com', u = '/web2/conn.html', a = i + '/index.do', f = o + '/jtr', l = i + '/rl.do', c = i + '/styles/all-packed.css';
+        J.loadCSS(document, c), window.OUTFOX_JavascriptTranslatoR = new J.TR.UI(document.body, {domain: o, update: !1, updateTipMsg: '增加关闭按钮', updateDate: '2011-3-15', cssURL: c, tipsURL: a, transURL: f, logURL: l, connFilePath: u, reqSize: 20})
+    }
+}</script>
+ </head> 
+ <body id="left-nav-present"> 
+  <a name="top"></a> 
+  <div style="width: 100%;"> 
+   <table summary="" border="0" cellspacing="10" align="right" style="float: right;"> 
+    <tbody> 
+     <tr> 
+      <td align="center" valign="middle" class="text"> <a href="index.htm" target="_top"> <img border="0" src="nav/images/blafplus_home.gif" alt="Home" height="32" width="32" /><br /> Home </a> </td> 
+      <!-- Personalization link not shown --> 
+      <td align="center" valign="middle" class="text"> <a href="nav/help.htm"> <img border="0" src="nav/images/blafplus_help.gif" alt="Help" height="32" width="32" /><br />Help</a> </td> 
+      <td valign="middle" align="center" class="text"> <a href="dcommon/html/feedback.htm"> <img border="0" src="nav/images/blafplus_contact_us.gif" alt="Contact us" height="32" width="32" /><br />Contact Us </a> </td> 
+     </tr> 
+    </tbody> 
+   </table> 
+   <p class="title2"><img width="338" height="50" src="nav/images/blaf/Oracle_Database_Library.gif" alt="Oracle Database" /> <br />&nbsp;&nbsp;11<i>g</i> Release 2 (11.2)</p> 
+  </div> 
+  <div id="nav"> 
+   <noscript> 
+    <p> The scripting on this page is for navigation purposes only, and is not required to access any of the page content. </p> 
+   </noscript> 
+   <script type="text/javascript" src="nav/js/toc.js"></script> 
+   <div class="simple_search_form_container" style="margin-bottom: 5px;"> 
+    <div> 
+     <form class="simple_search_form" action="http://www.oracle.com/pls/db112/search" method="get"> 
+      <input type="hidden" name="remark" value="quick_search" /> 
+      <span> <input type="text" id="s_word" name="word" value="" class="search_field" /> </span> 
+      <span class="text"> <label for="s_word"> <span style=" display: none; ">Search:</span> </label> <input type="submit" value="Search" class="text" /> </span> 
+     </form> 
+    </div> 
+    <div class="shortcut_links"> 
+     <a href="http://www.oracle.com/pls/db112/ranked?advanced=1" target="_top">Advanced Search</a> ? 
+     <a href="nav/portal_3.htm" target="_top">Master Book List</a> ? 
+     <a href="mix.112/b14387/toc.htm" target="_top">Master Index</a> ? 
+     <a href="mix.112/b14388/toc.htm" target="_top">Master Glossary</a> ? 
+     <a href="server.112/e17766/toc.htm" target="_top">Error Messages</a> 
+    </div> 
+   </div> 
+   <table class="tree_toolbar" width="100%" summary="" cellspacing="0" cellpadding="3" border="0"> 
+    <tbody> 
+     <tr> 
+      <!--	bgcolor="#f0f0e0" --> 
+      <td bgcolor="#f6f6ff" height="20" style="border-top: 1px solid black; border-bottom: 1px solid black;" valign="middle"> <a href="javascript:expandAll();">Expand All</a> | <a href="javascript:collapseAll();">Collapse All</a> | <a href="nav/help.htm" target="_top">Help</a> </td> 
+     </tr> 
+    </tbody> 
+   </table> 
+   <div id="div00001"> 
+    <a class="linkanchor" href="javascript:flipEntry('id_19020')"> <span class="toc_heading" id="id_19020_hide"><img src="nav/images/minus.gif" alt="Close" width="16" height="16" border="0" /><img src="nav/images/folderopen.gif" alt="Close" width="18" height="18" border="0" /></span> <span class="toc_heading" id="id_19020_show" style="display: none; "><img src="nav/images/plus.gif" alt="Open" width="16" height="16" border="0" /><img src="nav/images/folder.gif" alt="Open" width="18" height="18" border="0" /></span></a> 
+    <span class="toc_heading"><a class="linkanchor" href="nav/portal_11.htm" onclick="return visitTopic('right', 'nav/portal_11.htm','00001');"> Installing and Upgrading</a></span> 
+   </div> 
+   <div id="id_19020"> 
+    <div class="toc_entry"> 
+     <div id="div00003" class="branch0"> 
+      <a id="a00003" class="linkanchor" href="nav/portal_11.htm" onclick="return visitTopic('_top', 'nav/portal_11.htm#essentials','00003');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Essentials</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00005" class="branch0"> 
+      <a id="a00005" class="linkanchor" href="nav/portal_11.htm" onclick="return visitTopic('_top', 'nav/portal_11.htm#linux_installation_guides','00005');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Linux Installation Guides</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00007" class="branch0"> 
+      <a id="a00007" class="linkanchor" href="nav/portal_11.htm" onclick="return visitTopic('_top', 'nav/portal_11.htm#microsoft_windows_installation_guides','00007');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Microsoft Windows Installation Guides</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00009" class="branch0"> 
+      <a id="a00009" class="linkanchor" href="nav/portal_11.htm" onclick="return visitTopic('_top', 'nav/portal_11.htm#solaris_installation_guides','00009');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Solaris Installation Guides</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00011" class="branch0"> 
+      <a id="a00011" class="linkanchor" href="nav/portal_11.htm" onclick="return visitTopic('_top', 'nav/portal_11.htm#hp-ux_installation_guides','00011');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />HP-UX Installation Guides</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00013" class="branch0"> 
+      <a id="a00013" class="linkanchor" href="nav/portal_11.htm" onclick="return visitTopic('_top', 'nav/portal_11.htm#aix_installation_guides','00013');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />AIX Installation Guides</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00015" class="branch0"> 
+      <a id="a00015" class="linkanchor" href="nav/portal_11.htm" onclick="return visitTopic('_top', 'nav/portal_11.htm#fujitsu_installation_guides','00015');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Fujitsu BS2000/OSD Installation Guides</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00017" class="branch0"> 
+      <a id="a00017" class="linkanchor" href="nav/portal_11.htm" onclick="return visitTopic('_top', 'nav/portal_11.htm#mac_installation_guides','00017');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Apple Mac OS X</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00019" class="branch0"> 
+      <a id="a00019" class="linkanchor" href="nav/portal_11.htm" onclick="return visitTopic('_top', 'nav/portal_11.htm#supplementary_installation_guides','00019');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Supplementary Installation Guides</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="div00021"> 
+    <a class="linkanchor" href="javascript:flipEntry('id_32650')"> <span class="toc_heading" id="id_32650_hide"><img src="nav/images/minus.gif" alt="Close" width="16" height="16" border="0" /><img src="nav/images/folderopen.gif" alt="Close" width="18" height="18" border="0" /></span> <span class="toc_heading" id="id_32650_show" style="display: none; "><img src="nav/images/plus.gif" alt="Open" width="16" height="16" border="0" /><img src="nav/images/folder.gif" alt="Open" width="18" height="18" border="0" /></span></a> 
+    <span class="toc_heading"><a class="linkanchor" href="nav/portal_1.htm" onclick="return visitTopic('right', 'nav/portal_1.htm','00021');"> Getting Started</a></span> 
+   </div> 
+   <div id="id_32650"> 
+    <div class="toc_entry"> 
+     <div id="div00023" class="branch0"> 
+      <a id="a00023" class="linkanchor" href="nav/portal_1.htm" onclick="return visitTopic('_top', 'nav/portal_1.htm#new_to_oracle_database_11g','00023');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />New to Oracle Database 11<i>g</i></a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00025" class="branch0"> 
+      <a id="a00025" class="linkanchor" href="nav/portal_1.htm" onclick="return visitTopic('_top', 'nav/portal_1.htm#supporting_documentation','00025');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Supporting Documentation</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00027" class="branch0"> 
+      <a id="a00027" class="linkanchor" href="nav/portal_1.htm" onclick="return visitTopic('_top', 'nav/portal_1.htm#upgrade_information','00027');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Upgrade Information</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00029" class="branch0"> 
+      <a id="a00029" class="linkanchor" href="nav/portal_1.htm" onclick="return visitTopic('_top', 'nav/portal_1.htm#license_information','00029');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />License Information</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00031" class="branch0"> 
+      <a id="a00031" class="linkanchor" href="nav/portal_1.htm" onclick="return visitTopic('_top', 'nav/portal_1.htm#developer_essentials','00031');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Developer Essentials</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="div00033"> 
+    <a class="linkanchor" href="javascript:flipEntry('id_12581')"> <span class="toc_heading" id="id_12581_hide"><img src="nav/images/minus.gif" alt="Close" width="16" height="16" border="0" /><img src="nav/images/folderopen.gif" alt="Close" width="18" height="18" border="0" /></span> <span class="toc_heading" id="id_12581_show" style="display: none; "><img src="nav/images/plus.gif" alt="Open" width="16" height="16" border="0" /><img src="nav/images/folder.gif" alt="Open" width="18" height="18" border="0" /></span></a> 
+    <span class="toc_heading"><a class="linkanchor" href="nav/portal_4.htm" onclick="return visitTopic('right', 'nav/portal_4.htm','00033');"> Database Administration</a></span> 
+   </div> 
+   <div id="id_12581"> 
+    <div class="toc_entry"> 
+     <div id="div00035" class="branch0"> 
+      <a id="a00035" class="linkanchor" href="nav/portal_4.htm" onclick="return visitTopic('_top', 'nav/portal_4.htm#essentials','00035');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Essentials</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00037" class="branch0"> 
+      <a id="a00037" class="linkanchor" href="nav/portal_4.htm" onclick="return visitTopic('_top', 'nav/portal_4.htm#supporting_documentation','00037');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Supporting Documentation</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00039" class="branch0"> 
+      <a id="a00039" class="linkanchor" href="nav/portal_4.htm" onclick="return visitTopic('_top', 'nav/portal_4.htm#sql_and_pl_sql','00039');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />SQL and PL/SQL</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00041" class="branch0"> 
+      <a id="a00041" class="linkanchor" href="nav/portal_4.htm" onclick="return visitTopic('_top', 'nav/portal_4.htm#clients_for_database_administration','00041');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Clients for Database Administration</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00043" class="branch0"> 
+      <a id="a00043" class="linkanchor" href="nav/portal_4.htm" onclick="return visitTopic('_top', 'nav/portal_4.htm#security','00043');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Security</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00045" class="branch0"> 
+      <a id="a00045" class="linkanchor" href="nav/portal_4.htm" onclick="return visitTopic('_top', 'nav/portal_4.htm#network_management','00045');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Network Management</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00047" class="branch0"> 
+      <a id="a00047" class="linkanchor" href="nav/portal_4.htm" onclick="return visitTopic('_top', 'nav/portal_4.htm#storage','00047');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Storage</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00049" class="branch0"> 
+      <a id="a00049" class="linkanchor" href="nav/portal_4.htm" onclick="return visitTopic('_top', 'nav/portal_4.htm#backup_and_recovery','00049');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Backup and Recovery</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00051" class="branch0"> 
+      <a id="a00051" class="linkanchor" href="nav/portal_4.htm" onclick="return visitTopic('_top', 'nav/portal_4.htm#unix_and_windows_database_administration','00051');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />UNIX and Windows Database Administration</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00053" class="branch0"> 
+      <a id="a00053" class="linkanchor" href="nav/portal_4.htm" onclick="return visitTopic('_top', 'nav/portal_4.htm#testing','00053');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Testing</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="div00055"> 
+    <a class="linkanchor" href="javascript:flipEntry('id_16418')"> <span class="toc_heading" id="id_16418_hide"><img src="nav/images/minus.gif" alt="Close" width="16" height="16" border="0" /><img src="nav/images/folderopen.gif" alt="Close" width="18" height="18" border="0" /></span> <span class="toc_heading" id="id_16418_show" style="display: none; "><img src="nav/images/plus.gif" alt="Open" width="16" height="16" border="0" /><img src="nav/images/folder.gif" alt="Open" width="18" height="18" border="0" /></span></a> 
+    <span class="toc_heading"><a class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('right', 'nav/portal_5.htm','00055');"> Application Development</a></span> 
+   </div> 
+   <div id="id_16418"> 
+    <div class="toc_entry"> 
+     <div id="div00057" class="branch0"> 
+      <a id="a00057" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#essentials','00057');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Essentials</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00059" class="branch0"> 
+      <a id="a00059" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#supporting_documentation','00059');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Supporting Documentation</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00061" class="branch0"> 
+      <a id="a00061" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#application_development_concepts','00061');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Application Development Concepts</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00063" class="branch0"> 
+      <a id="a00063" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#sql_and_pl_sql','00063');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />SQL and PL/SQL</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00065" class="branch0"> 
+      <a id="a00065" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#sql_developer_and_sql_plus','00065');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />SQL Developer and SQL Plus</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00067" class="branch0"> 
+      <a id="a00067" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#application_express','00067');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Application Express</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00069" class="branch0"> 
+      <a id="a00069" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#java','00069');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Java</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00071" class="branch0"> 
+      <a id="a00071" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#.net_and_windows_application_development','00071');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />.NET and Windows Application Development</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00073" class="branch0"> 
+      <a id="a00073" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#xml','00073');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />XML</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00075" class="branch0"> 
+      <a id="a00075" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#globalization','00075');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Globalization Support</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00077" class="branch0"> 
+      <a id="a00077" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#oracle_call_interface','00077');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Call Interface</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00079" class="branch0"> 
+      <a id="a00079" class="linkanchor" href="nav/portal_5.htm" onclick="return visitTopic('_top', 'nav/portal_5.htm#precompilers','00079');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Precompilers</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="div00081"> 
+    <a class="linkanchor" href="javascript:flipEntry('id_6472')"> <span class="toc_heading" id="id_6472_hide"><img src="nav/images/minus.gif" alt="Close" width="16" height="16" border="0" /><img src="nav/images/folderopen.gif" alt="Close" width="18" height="18" border="0" /></span> <span class="toc_heading" id="id_6472_show" style="display: none; "><img src="nav/images/plus.gif" alt="Open" width="16" height="16" border="0" /><img src="nav/images/folder.gif" alt="Open" width="18" height="18" border="0" /></span></a> 
+    <span class="toc_heading"><a class="linkanchor" href="nav/portal_16.htm" onclick="return visitTopic('right', 'nav/portal_16.htm','00081');"> Grid Computing</a></span> 
+   </div> 
+   <div id="id_6472"> 
+    <div class="toc_entry"> 
+     <div id="div00083" class="branch0"> 
+      <a id="a00083" class="linkanchor" href="nav/portal_16.htm" onclick="return visitTopic('_top', 'nav/portal_16.htm#essentials','00083');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Essentials</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00085" class="branch0"> 
+      <a id="a00085" class="linkanchor" href="nav/portal_16.htm" onclick="return visitTopic('_top', 'nav/portal_16.htm#supporting_documentation','00085');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Supporting Documentation</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00087" class="branch0"> 
+      <a id="a00087" class="linkanchor" href="nav/portal_16.htm" onclick="return visitTopic('_top', 'nav/portal_16.htm#oracle_real_application_clusters','00087');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Real Application Clusters</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00089" class="branch0"> 
+      <a id="a00089" class="linkanchor" href="nav/portal_16.htm" onclick="return visitTopic('_top', 'nav/portal_16.htm#oracle_clusterware','00089');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Clusterware</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00091" class="branch0"> 
+      <a id="a00091" class="linkanchor" href="nav/portal_16.htm" onclick="return visitTopic('_top', 'nav/portal_16.htm#oracle_automatic_storage_management','00091');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Automatic Storage Management</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="div00093"> 
+    <a class="linkanchor" href="javascript:flipEntry('id_26905')"> <span class="toc_heading" id="id_26905_hide"><img src="nav/images/minus.gif" alt="Close" width="16" height="16" border="0" /><img src="nav/images/folderopen.gif" alt="Close" width="18" height="18" border="0" /></span> <span class="toc_heading" id="id_26905_show" style="display: none; "><img src="nav/images/plus.gif" alt="Open" width="16" height="16" border="0" /><img src="nav/images/folder.gif" alt="Open" width="18" height="18" border="0" /></span></a> 
+    <span class="toc_heading"><a class="linkanchor" href="nav/portal_17.htm" onclick="return visitTopic('right', 'nav/portal_17.htm','00093');"> Performance</a></span> 
+   </div> 
+   <div id="id_26905"> 
+    <div class="toc_entry"> 
+     <div id="div00095" class="branch0"> 
+      <a id="a00095" class="linkanchor" href="nav/portal_17.htm" onclick="return visitTopic('_top', 'nav/portal_17.htm#essentials','00095');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Essentials</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00097" class="branch0"> 
+      <a id="a00097" class="linkanchor" href="nav/portal_17.htm" onclick="return visitTopic('_top', 'nav/portal_17.htm#oracle_in-memory_database_cache','00097');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle In-Memory Database Cache</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="div00099"> 
+    <a class="linkanchor" href="javascript:flipEntry('id_8809')"> <span class="toc_heading" id="id_8809_hide"><img src="nav/images/minus.gif" alt="Close" width="16" height="16" border="0" /><img src="nav/images/folderopen.gif" alt="Close" width="18" height="18" border="0" /></span> <span class="toc_heading" id="id_8809_show" style="display: none; "><img src="nav/images/plus.gif" alt="Open" width="16" height="16" border="0" /><img src="nav/images/folder.gif" alt="Open" width="18" height="18" border="0" /></span></a> 
+    <span class="toc_heading"><a class="linkanchor" href="nav/portal_14.htm" onclick="return visitTopic('right', 'nav/portal_14.htm','00099');"> High Availability</a></span> 
+   </div> 
+   <div id="id_8809"> 
+    <div class="toc_entry"> 
+     <div id="div00101" class="branch0"> 
+      <a id="a00101" class="linkanchor" href="nav/portal_14.htm" onclick="return visitTopic('_top', 'nav/portal_14.htm#data_guard','00101');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Data Guard</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00103" class="branch0"> 
+      <a id="a00103" class="linkanchor" href="nav/portal_14.htm" onclick="return visitTopic('_top', 'nav/portal_14.htm#backup_and_recovery','00103');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Backup and Recovery</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00105" class="branch0"> 
+      <a id="a00105" class="linkanchor" href="nav/portal_14.htm" onclick="return visitTopic('_top', 'nav/portal_14.htm#oracle_streams','00105');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Streams</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00107" class="branch0"> 
+      <a id="a00107" class="linkanchor" href="nav/portal_14.htm" onclick="return visitTopic('_top', 'nav/portal_14.htm#advanced_replication','00107');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Advanced Replication</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="div00109"> 
+    <a class="linkanchor" href="javascript:flipEntry('id_7629')"> <span class="toc_heading" id="id_7629_hide"><img src="nav/images/minus.gif" alt="Close" width="16" height="16" border="0" /><img src="nav/images/folderopen.gif" alt="Close" width="18" height="18" border="0" /></span> <span class="toc_heading" id="id_7629_show" style="display: none; "><img src="nav/images/plus.gif" alt="Open" width="16" height="16" border="0" /><img src="nav/images/folder.gif" alt="Open" width="18" height="18" border="0" /></span></a> 
+    <span class="toc_heading"><a class="linkanchor" href="nav/portal_6.htm" onclick="return visitTopic('right', 'nav/portal_6.htm','00109');"> Data Warehousing and Business Intelligence</a></span> 
+   </div> 
+   <div id="id_7629"> 
+    <div class="toc_entry"> 
+     <div id="div00111" class="branch0"> 
+      <a id="a00111" class="linkanchor" href="nav/portal_6.htm" onclick="return visitTopic('_top', 'nav/portal_6.htm#supporting_documentation','00111');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Supporting Documentation</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00113" class="branch0"> 
+      <a id="a00113" class="linkanchor" href="nav/portal_6.htm" onclick="return visitTopic('_top', 'nav/portal_6.htm#oracle_warehouse_builder','00113');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Warehouse Builder</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00115" class="branch0"> 
+      <a id="a00115" class="linkanchor" href="nav/portal_6.htm" onclick="return visitTopic('_top', 'nav/portal_6.htm#online_analytical_processing_(olap)','00115');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Online Analytical Processing (OLAP)</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00117" class="branch0"> 
+      <a id="a00117" class="linkanchor" href="nav/portal_6.htm" onclick="return visitTopic('_top', 'nav/portal_6.htm#oracle_advanced_analytics','00117');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Advanced Analytics</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00119" class="branch0"> 
+      <a id="a00119" class="linkanchor" href="nav/portal_6.htm" onclick="return visitTopic('_top', 'nav/portal_6.htm#communications_data_model','00119');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Communications Data Model</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00121" class="branch0"> 
+      <a id="a00121" class="linkanchor" href="nav/portal_6.htm" onclick="return visitTopic('_top', 'nav/portal_6.htm#airlines_data_model','00121');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Airlines Data Model</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00123" class="branch0"> 
+      <a id="a00123" class="linkanchor" href="nav/portal_6.htm" onclick="return visitTopic('_top', 'nav/portal_6.htm#retail_data_model','00123');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Retail Data Model</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="div00125"> 
+    <a class="linkanchor" href="javascript:flipEntry('id_1148')"> <span class="toc_heading" id="id_1148_hide"><img src="nav/images/minus.gif" alt="Close" width="16" height="16" border="0" /><img src="nav/images/folderopen.gif" alt="Close" width="18" height="18" border="0" /></span> <span class="toc_heading" id="id_1148_show" style="display: none; "><img src="nav/images/plus.gif" alt="Open" width="16" height="16" border="0" /><img src="nav/images/folder.gif" alt="Open" width="18" height="18" border="0" /></span></a> 
+    <span class="toc_heading"><a class="linkanchor" href="nav/portal_7.htm" onclick="return visitTopic('right', 'nav/portal_7.htm','00125');"> Unstructured Data and Content Management</a></span> 
+   </div> 
+   <div id="id_1148"> 
+    <div class="toc_entry"> 
+     <div id="div00127" class="branch0"> 
+      <a id="a00127" class="linkanchor" href="nav/portal_7.htm" onclick="return visitTopic('_top', 'nav/portal_7.htm#oracle_secure_files_and_large_objects','00127');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Secure Files and Large Objects</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00129" class="branch0"> 
+      <a id="a00129" class="linkanchor" href="nav/portal_7.htm" onclick="return visitTopic('_top', 'nav/portal_7.htm#xml','00129');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />XML</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00131" class="branch0"> 
+      <a id="a00131" class="linkanchor" href="nav/portal_7.htm" onclick="return visitTopic('_top', 'nav/portal_7.htm#oracle_text','00131');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Text</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00133" class="branch0"> 
+      <a id="a00133" class="linkanchor" href="nav/portal_7.htm" onclick="return visitTopic('_top', 'nav/portal_7.htm#oracle_spatial_and_location_information','00133');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Spatial and Location Information</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00135" class="branch0"> 
+      <a id="a00135" class="linkanchor" href="nav/portal_7.htm" onclick="return visitTopic('_top', 'nav/portal_7.htm#oracle_multimedia','00135');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Multimedia</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00137" class="branch0"> 
+      <a id="a00137" class="linkanchor" href="nav/portal_7.htm" onclick="return visitTopic('_top', 'nav/portal_7.htm#other_content_types','00137');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Other Content Types</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="div00139"> 
+    <a class="linkanchor" href="javascript:flipEntry('id_21837')"> <span class="toc_heading" id="id_21837_hide"><img src="nav/images/minus.gif" alt="Close" width="16" height="16" border="0" /><img src="nav/images/folderopen.gif" alt="Close" width="18" height="18" border="0" /></span> <span class="toc_heading" id="id_21837_show" style="display: none; "><img src="nav/images/plus.gif" alt="Open" width="16" height="16" border="0" /><img src="nav/images/folder.gif" alt="Open" width="18" height="18" border="0" /></span></a> 
+    <span class="toc_heading"><a class="linkanchor" href="nav/portal_15.htm" onclick="return visitTopic('right', 'nav/portal_15.htm','00139');"> Information Integration</a></span> 
+   </div> 
+   <div id="id_21837"> 
+    <div class="toc_entry"> 
+     <div id="div00141" class="branch0"> 
+      <a id="a00141" class="linkanchor" href="nav/portal_15.htm" onclick="return visitTopic('_top', 'nav/portal_15.htm#essentials','00141');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Essentials</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00143" class="branch0"> 
+      <a id="a00143" class="linkanchor" href="nav/portal_15.htm" onclick="return visitTopic('_top', 'nav/portal_15.htm#xstream','00143');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />XStream</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00145" class="branch0"> 
+      <a id="a00145" class="linkanchor" href="nav/portal_15.htm" onclick="return visitTopic('_top', 'nav/portal_15.htm#oracle_streams','00145');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Streams</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00147" class="branch0"> 
+      <a id="a00147" class="linkanchor" href="nav/portal_15.htm" onclick="return visitTopic('_top', 'nav/portal_15.htm#heterogeneous_connectivity','00147');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Heterogeneous Connectivity</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00149" class="branch0"> 
+      <a id="a00149" class="linkanchor" href="nav/portal_15.htm" onclick="return visitTopic('_top', 'nav/portal_15.htm#advanced_replication','00149');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Advanced Replication</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00151" class="branch0"> 
+      <a id="a00151" class="linkanchor" href="nav/portal_15.htm" onclick="return visitTopic('_top', 'nav/portal_15.htm#network_management','00151');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Network Management</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00153" class="branch0"> 
+      <a id="a00153" class="linkanchor" href="nav/portal_15.htm" onclick="return visitTopic('_top', 'nav/portal_15.htm#additional_features','00153');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Additional Features</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="div00155"> 
+    <a class="linkanchor" href="javascript:flipEntry('id_17138')"> <span class="toc_heading" id="id_17138_hide"><img src="nav/images/minus.gif" alt="Close" width="16" height="16" border="0" /><img src="nav/images/folderopen.gif" alt="Close" width="18" height="18" border="0" /></span> <span class="toc_heading" id="id_17138_show" style="display: none; "><img src="nav/images/plus.gif" alt="Open" width="16" height="16" border="0" /><img src="nav/images/folder.gif" alt="Open" width="18" height="18" border="0" /></span></a> 
+    <span class="toc_heading"><a class="linkanchor" href="nav/portal_25.htm" onclick="return visitTopic('right', 'nav/portal_25.htm','00155');"> Security</a></span> 
+   </div> 
+   <div id="id_17138"> 
+    <div class="toc_entry"> 
+     <div id="div00157" class="branch0"> 
+      <a id="a00157" class="linkanchor" href="nav/portal_25.htm" onclick="return visitTopic('_top', 'nav/portal_25.htm#essentials','00157');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Essentials</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00159" class="branch0"> 
+      <a id="a00159" class="linkanchor" href="nav/portal_25.htm" onclick="return visitTopic('_top', 'nav/portal_25.htm#supporting_documentation','00159');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Supporting Documentation</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00161" class="branch0"> 
+      <a id="a00161" class="linkanchor" href="nav/portal_25.htm" onclick="return visitTopic('_top', 'nav/portal_25.htm#database-level_security','00161');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Database-Level Security</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00163" class="branch0"> 
+      <a id="a00163" class="linkanchor" href="nav/portal_25.htm" onclick="return visitTopic('_top', 'nav/portal_25.htm#network_management','00163');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Network Management</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00165" class="branch0"> 
+      <a id="a00165" class="linkanchor" href="nav/portal_25.htm" onclick="return visitTopic('_top', 'nav/portal_25.htm#storage','00165');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Storage</a> 
+     </div> 
+    </div> 
+    <div class="toc_entry"> 
+     <div id="div00167" class="branch0"> 
+      <a id="a00167" class="linkanchor" href="nav/portal_25.htm" onclick="return visitTopic('_top', 'nav/portal_25.htm#oracle_database_vault','00167');" target="_top"><img src="nav/images/page.gif" alt="New page" width="18" height="18" border="0" style="margin-right: 2px;" />Oracle Database Vault</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="toc_entry_standalone"> 
+   </div> 
+   <script type="text/javascript">
+function collapseAll()
+{
+hideEntry("id_19020");
+hideEntry("id_32650");
+hideEntry("id_12581");
+hideEntry("id_16418");
+hideEntry("id_6472");
+hideEntry("id_26905");
+hideEntry("id_8809");
+hideEntry("id_7629");
+hideEntry("id_1148");
+hideEntry("id_21837");
+hideEntry("id_17138");
+}
+</script> 
+   <script type="text/javascript">
+function expandAll()
+{
+showEntry("id_19020");
+showEntry("id_32650");
+showEntry("id_12581");
+showEntry("id_16418");
+showEntry("id_6472");
+showEntry("id_26905");
+showEntry("id_8809");
+showEntry("id_7629");
+showEntry("id_1148");
+showEntry("id_21837");
+showEntry("id_17138");
+}
+</script> 
+   <script type="text/javascript">collapseAll();</script> 
+  </div> 
+  <div id="main"> 
+   <div class="libmaincolumn libbalancedcolumn"> 
+    <h1 class="libportletheader" id="dba_essentials">DBA Essentials</h1> 
+    <p>Manage all aspects of your Oracle databases with the Enterprise Manager GUI.</p> 
+    <table summary="List of books for this portlet" class="libdoclist" id="dba_essentials_books"> 
+     <tbody> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">2 Day DBA </td> 
+       <td><a href="server.112/e10897/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e10897.pdf">PDF</a></td> 
+      </tr> 
+      <tr class="tablehilite"> 
+       <td class="libdoclisttitle" scope="row">2 Day + Security Guide </td> 
+       <td><a href="server.112/e10575/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e10575.pdf">PDF</a></td> 
+      </tr> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">2 Day + Performance Tuning Guide </td> 
+       <td><a href="server.112/e10822/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e10822.pdf">PDF</a></td> 
+      </tr> 
+      <tr class="tablehilite"> 
+       <td class="libdoclisttitle" scope="row">2 Day + Real Application Clusters Guide </td> 
+       <td><a href="rac.112/e17264/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="rac.112/e17264.pdf">PDF</a></td> 
+      </tr> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">2 Day + Data Warehousing Guide </td> 
+       <td><a href="server.112/e25555/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e25555.pdf">PDF</a></td> 
+      </tr> 
+      <tr class="tablehilite"> 
+       <td class="libdoclisttitle" scope="row">2 Day + Data Replication and Integration Guide </td> 
+       <td><a href="server.112/e17516/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e17516.pdf">PDF</a></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h1 class="libportletheader" id="new_to_oracle_database_11g">New to Oracle Database 11<i>g</i></h1> 
+    <p>Information you need for the latest release. </p> 
+    <table summary="List of books for this portlet" class="libdoclist" id="new_to_oracle_database_11g_books"> 
+     <tbody> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">New Features Guide </td> 
+       <td><a href="server.112/e22487/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e22487.pdf">PDF</a></td> 
+      </tr> 
+      <tr class="tablehilite"> 
+       <td class="libdoclisttitle" scope="row">Readme </td> 
+       <td><a href="readmes.112/e22488/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="readmes.112/e22488.pdf">PDF</a></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h1 class="libportletheader" id="supporting_documentation">Supporting Documentation</h1> 
+    <p>Supporting documentation treats advanced topics. In general, the <i>2 Day&nbsp;+</i> books refer you to these topics when needed.</p> 
+    <table summary="List of books for this portlet" class="libdoclist" id="supporting_documentation_books"> 
+     <tbody> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">Database Concepts </td> 
+       <td><a href="server.112/e25789/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e25789.pdf">PDF</a></td> 
+      </tr> 
+      <tr class="tablehilite"> 
+       <td class="libdoclisttitle" scope="row">Administrator's Guide </td> 
+       <td><a href="server.112/e25494/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e25494.pdf">PDF</a></td> 
+      </tr> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">Reference </td> 
+       <td><a href="server.112/e25513/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e25513.pdf">PDF</a></td> 
+      </tr> 
+      <tr class="tablehilite"> 
+       <td class="libdoclisttitle" scope="row">SQL Language Reference </td> 
+       <td><a href="server.112/e26088/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e26088.pdf">PDF</a></td> 
+      </tr> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">Performance Tuning Guide </td> 
+       <td><a href="server.112/e16638/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e16638.pdf">PDF</a></td> 
+      </tr> 
+      <tr class="tablehilite"> 
+       <td class="libdoclisttitle" scope="row">Error Messages </td> 
+       <td><a href="server.112/e17766/toc.htm">HTML</a></td> 
+       <td></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h1 class="libportletheader" id="upgrade_information">Upgrade Information</h1> 
+    <p>If you are familiar with earlier Oracle releases and are moving to Oracle Database 11<i>g</i>, these books describe the new features, and explain how to upgrade your database.</p> 
+    <table summary="List of books for this portlet" class="libdoclist" id="upgrade_information_books"> 
+     <tbody> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">Upgrade Guide </td> 
+       <td><a href="server.112/e23633/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e23633.pdf">PDF</a></td> 
+      </tr> 
+      <tr class="tablehilite"> 
+       <td class="libdoclisttitle" scope="row">New Features Guide </td> 
+       <td><a href="server.112/e22487/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="server.112/e22487.pdf">PDF</a></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h1 class="libportletheader" id="license_information">License Information</h1> 
+    <p>This book explains how certain Oracle Database features are licensed.</p> 
+    <table summary="List of books for this portlet" class="libdoclist" id="license_information_books"> 
+     <tbody> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">Licensing Information </td> 
+       <td><a href="license.112/e10594/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="license.112/e10594.pdf">PDF</a></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+   </div> 
+   <div class="libsidebar libbalancedcolumn"> 
+    <h1 class="libportletheader" id="developer_essentials">Developer Essentials</h1> 
+    <p>Build applications around Oracle databases using the languages and platforms of your choice.</p> 
+    <table summary="List of books for this portlet" class="libdoclist" id="developer_essentials_books"> 
+     <tbody> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">2 Day Developer's Guide </td> 
+       <td><a href="appdev.112/e10766/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="appdev.112/e10766.pdf">PDF</a></td> 
+      </tr> 
+      <tr class="tablehilite"> 
+       <td class="libdoclisttitle" scope="row">2 Day + Application Express Developer's Guide </td> 
+       <td><a href="appdev.112/e11946/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="appdev.112/e11946.pdf">PDF</a></td> 
+      </tr> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">2 Day + Java Developer's Guide </td> 
+       <td><a href="appdev.112/e12137/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="appdev.112/e12137.pdf">PDF</a></td> 
+      </tr> 
+      <tr class="tablehilite"> 
+       <td class="libdoclisttitle" scope="row">2 Day + PHP Developer's Guide </td> 
+       <td><a href="appdev.112/e10811/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="appdev.112/e10811.pdf">PDF</a></td> 
+      </tr> 
+      <tr> 
+       <td class="libdoclisttitle" scope="row">2 Day + .NET Developer's Guide for Microsoft Windows </td> 
+       <td><a href="appdev.112/e10767/toc.htm">HTML</a></td> 
+       <td><a target="_top" href="appdev.112/e10767.pdf">PDF</a></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <div class="libsidebarbox"> 
+     <h1 style="text-align: center;" class="libsidebarheader" id="tips">Tips</h1> 
+     <div> 
+      <p>Each page in the library lists the essential books in a specific topic area first. The <i>2 Day</i> and <i>2 Day +</i> guides cover the most essential tasks and concepts in a specific topic area. The remainder of the page lists books that contain more detailed or advanced information. </p> 
+     </div> 
+    </div> 
+    <div class="libsidebarbox"> 
+     <h1 style="text-align: center;" class="libsidebarheader" id="mobile_formats_available">Mobile Formats Available</h1> 
+     <div> 
+      <div> 
+       <p>Several documents are available in Mobipocket and ePub formats for convenient mobile viewing. Links to these formats are available from the upper-right corner of associated HTML pages.</p> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="libsidebarbox"> 
+     <h1 style="text-align: center;" class="libsidebarheader" id="online_resources">Online Resources</h1> 
+     <div> 
+      <p><a target="_blank" href="http://www.oracle.com/technetwork/index.html">Oracle Technology Network</a> </p> 
+      <ul> 
+       <li><a target="_blank" href="http://www.oracle.com/technetwork/database/enterprise-edition/overview/index.html">Getting Started with Oracle Database</a></li> 
+       <li><a target="_blank" href="http://www.oracle.com/technetwork/dbadev/index.html">Getting Started for Database Administrators</a></li> 
+       <li><a target="_blank" href="http://www.oracle.com/technetwork/database/focus-areas/application-development/index.html">Getting Started for Developers</a></li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div style="clear:both;height:1px;width:1px"></div> 
+  <div> 
+   <hr style="margin-top: 100px;" /> 
+   <p class="copyright" style="text-align: center;"><img src="nav/images/blaf/oracle.gif" alt="Oracle" style="border-style: none;" width="133" height="18" /> <br /><a href="dcommon/html/cpyr.htm">Copyright &copy; 2013, Oracle and/or its affiliates. All rights reserved.</a></p> 
+  </div>  
+ </body>
+</html>
